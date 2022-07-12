@@ -1,4 +1,21 @@
 @use "sass:math";
+@import './fonts';
+
+@mixin titleFont {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: calcFluidFontSize(14, 16, 320, 1366);
+  line-height: 125%;
+  color:$primaryColor;
+}
+
+@mixin textFont {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: calcFluidFontSize(12, 15, 320, 1366);
+  line-height: 133%;
+  color: $secondColor;
+}
 
 @function calcFluidFontSize($f-min, $f-max, $v-min, $v-max, $units: px) {
     $k: math.div($f-max - $f-min, $v-max - $v-min);

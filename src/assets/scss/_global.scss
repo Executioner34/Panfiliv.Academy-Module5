@@ -1,1 +1,41 @@
-@import '../node_modules/scss-reset/src/scss/_reset.scss'
+@import '../node_modules/scss-reset/src/scss/_reset.scss';
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    @include textFont;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    @include titleFont;
+    font-size: calcFluidFontSize(24, 40, 320, 1366);
+    line-height: 122%;
+}
+
+h2 {
+    @include titleFont;
+    font-size: calcFluidFontSize(20, 36, 320, 1366);
+    line-height: 133%;
+}
+
+h3 {
+    @include titleFont;
+}
+
+p {
+    @include textFont;
+}
+
+a {
+    @include titleFont;
+    text-decoration: none;
+}
