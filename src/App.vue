@@ -14,25 +14,26 @@
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style lang="scss">
-@import './assets/scss/_variebles.scss';
-@import './assets/scss/_mixins.scss';
-@import './assets/scss/_global.scss';
+@import "./assets/scss/_variebles.scss";
+@import "./assets/scss/_mixins.scss";
+@import "./assets/scss/_global.scss";
 
 #app {
-  padding: 23px 80px 75px;
-  background-color: rgba(239, 240, 242, 1);
 }
 
 header {
   width: 100%;
+  height: 80px;
+  background-color: rgba(239, 240, 242, 1);
   .nav__bar {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding: 23px 80px 0px;
   }
   .nav__logo {
     @include titleFont;

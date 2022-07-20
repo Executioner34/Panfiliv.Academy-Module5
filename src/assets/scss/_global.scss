@@ -1,7 +1,9 @@
-@import '../node_modules/scss-reset/src/scss/_reset.scss';
+@import '../node_modules/normalize.css/normalize.css';
 
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -19,16 +21,19 @@ h1 {
     @include titleFont;
     font-size: calcFluidFontSize(24, 40, 320, 1366);
     line-height: 122%;
+    margin: 0;
 }
 
 h2 {
     @include titleFont;
     font-size: calcFluidFontSize(20, 36, 320, 1366);
     line-height: 133%;
+    margin: 0;
 }
 
 h3 {
     @include titleFont;
+    margin: 0;
 }
 
 p {
